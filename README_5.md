@@ -166,14 +166,5 @@ The GARCH and EVT implementations are built from first principles rather than us
 
 This approach prioritizes interpretability and pedagogical clarity over production optimization.
 
-## References
-
-Key theoretical foundations:
-- Bollerslev (1986): Generalized Autoregressive Conditional Heteroskedasticity
-- McNeil & Frey (2000): Estimation of Tail-Related Risk Measures
-- Christoffersen (1998): Evaluating Interval Forecasts
-- Kupiec (1995): Techniques for Verifying the Accuracy of Risk Measurement Models
-
----
 
 *This project was developed as part of independent research into quantitative risk management methodologies, combining classical financial econometrics with modern machine learning techniques.*
