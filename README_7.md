@@ -828,41 +828,6 @@ ml-integrated-tail-risk-framework/
 
 ---
 
-## Installation and Usage
-
-### Requirements
-
-```bash
-pip install numpy pandas scipy scikit-learn xgboost yfinance matplotlib seaborn shap
-```
-
-### Dependencies
-
-- Python 3.8+
-- NumPy >= 1.20
-- Pandas >= 1.3
-- SciPy >= 1.7
-- scikit-learn >= 1.0
-- XGBoost >= 1.5
-- yfinance >= 0.1.70
-- matplotlib >= 3.4
-- seaborn >= 0.11
-- SHAP >= 0.40
-
-### Running the Analysis
-
-```bash
-# Clone repository
-git clone https://github.com/username/ml-integrated-tail-risk-framework.git
-cd ml-integrated-tail-risk-framework
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Launch notebook
-jupyter notebook VaR_Analysis_Advanced.ipynb
-```
-
 ### Notebook Structure
 
 The analysis is organized sequentially:
@@ -962,33 +927,6 @@ The analysis is organized sequentially:
 
 ---
 
-## References
-
-### Foundational Papers
-
-**GARCH Models**:
-- Bollerslev, T. (1986). Generalized Autoregressive Conditional Heteroskedasticity. *Journal of Econometrics*, 31(3), 307-327.
-- Glosten, L. R., Jagannathan, R., & Runkle, D. E. (1993). On the Relation between the Expected Value and the Volatility of the Nominal Excess Return on Stocks. *Journal of Finance*, 48(5), 1779-1801.
-
-**Extreme Value Theory**:
-- McNeil, A. J., & Frey, R. (2000). Estimation of Tail-Related Risk Measures for Heteroscedastic Financial Time Series: An Extreme Value Approach. *Journal of Empirical Finance*, 7(3-4), 271-300.
-- Pickands, J. (1975). Statistical Inference Using Extreme Order Statistics. *Annals of Statistics*, 3(1), 119-131.
-
-**VaR Backtesting**:
-- Kupiec, P. H. (1995). Techniques for Verifying the Accuracy of Risk Measurement Models. *Journal of Derivatives*, 3(2), 73-84.
-- Christoffersen, P. F. (1998). Evaluating Interval Forecasts. *International Economic Review*, 39(4), 841-862.
-
-**Machine Learning in Finance**:
-- Gu, S., Kelly, B., & Xiu, D. (2020). Empirical Asset Pricing via Machine Learning. *Review of Financial Studies*, 33(5), 2223-2273.
-- Lundberg, S. M., & Lee, S. I. (2017). A Unified Approach to Interpreting Model Predictions. *NeurIPS*, 30.
-
-### Textbooks
-
-- McNeil, A. J., Frey, R., & Embrechts, P. (2015). *Quantitative Risk Management: Concepts, Techniques and Tools*. Princeton University Press.
-- Tsay, R. S. (2010). *Analysis of Financial Time Series*. Wiley.
-- Hull, J. C. (2018). *Risk Management and Financial Institutions*. Wiley.
-
----
 
 ## Technical Appendix
 
@@ -1018,12 +956,4 @@ This project was developed as independent research into quantitative risk manage
 
 The custom implementations of GARCH, EVT, and backtesting frameworks prioritize pedagogical clarity and understanding of first principles over production optimization.
 
----
 
-## License
-
-This project is intended for educational and research purposes. The analysis and code are provided as-is without warranty. Please cite appropriately if using this work in academic or professional contexts.
-
----
-
-*Last updated: November 2024*
