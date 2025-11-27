@@ -21,10 +21,7 @@ A quantitative risk management system that transforms traditional econometric mo
 7. [Model Validation](#model-validation)
 8. [Derivatives Pricing Extension](#derivatives-pricing-extension)
 9. [Critical Limitations](#critical-limitations)
-10. [Repository Structure](#repository-structure)
-11. [Installation and Usage](#installation-and-usage)
-12. [Future Work](#future-work)
-13. [References](#references)
+10. [Future Work](#future-work)
 
 ---
 
@@ -813,52 +810,38 @@ def evt_expected_shortfall(threshold, xi, sigma, var_estimate):
 
 ---
 
-## Repository Structure
-
-```
-ml-integrated-tail-risk-framework/
-├── VaR_Analysis_Advanced.ipynb    # Main analysis notebook (comprehensive)
-├── README.md                      # This documentation
-├── requirements.txt               # Python dependencies
-├── data/                          # Data cache (if applicable)
-│   └── .gitkeep
-└── figures/                       # Generated visualizations
-    └── .gitkeep
-```
-
----
 
 ### Notebook Structure
 
 The analysis is organized sequentially:
 
-1. **Setup & Data Acquisition** (Cells 1-3)
+1. **Setup & Data Acquisition** 
    - Library imports
    - Data download via yfinance
    - Portfolio construction
 
-2. **Exploratory Data Analysis** (Cells 4-12)
+2. **Exploratory Data Analysis** 
    - Return statistics by period
    - Structural break testing
    - Correlation regime analysis
 
-3. **Risk Model Estimation** (Cells 13-18)
+3. **Risk Model Estimation** 
    - Monte Carlo VaR
    - GARCH/GJR-GARCH fitting
    - EVT threshold selection and GPD fitting
 
-4. **Backtesting Framework** (Cells 19-21)
+4. **Backtesting Framework** 
    - Kupiec test
    - Christoffersen test
    - Model validation
 
-5. **Machine Learning Pipeline** (Cells 22-36)
+5. **Machine Learning Pipeline** 
    - Feature engineering
    - Walk-forward validation
    - SHAP interpretability
    - COVID-19 out-of-sample test
 
-6. **Extensions & Conclusions** (Cells 37-47)
+6. **Extensions & Conclusions** 
    - Derivatives pricing
    - Methodology comparison
    - Limitations discussion
