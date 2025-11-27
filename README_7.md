@@ -319,7 +319,7 @@ def mean_residual_life_plot(data, thresholds):
 def fit_gpd(exceedances, threshold):
     """
     Fit GPD to exceedances over threshold.
-    GPD is the limit distribution for exceedances (Pickands-Balkema-de Haan theorem).
+    GPD is the limit distribution for exceedances.
     """
     excess = exceedances - threshold
     shape, loc, scale = genpareto.fit(excess, floc=0)  # loc=0 for exceedances
