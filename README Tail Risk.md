@@ -6,7 +6,7 @@
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Research](https://img.shields.io/badge/Research-Quantitative%20Finance-orange)](https://github.com/yourusername/tail-risk-detection)
 
-## 📊 Overview
+## Overview
 
 This project introduces a novel framework that integrates econometric models (GARCH volatility dynamics and Extreme Value Theory) with machine learning to predict tail risk events in financial markets. Rather than asking *"What is today's VaR?"* (estimation), we reframe the problem as *"Will tomorrow's return exceed VaR?"* (prediction), enabling early detection of regime shifts.
 
@@ -17,7 +17,7 @@ This project introduces a novel framework that integrates econometric models (GA
 - **GARCH volatility dominates predictions** (21.8% feature importance)
 - **Novel interaction features** capture systemic stress (14.1% importance)
 
-## 🎯 Motivation
+## Motivation
 
 Traditional Value-at-Risk (VaR) models systematically failed during the 2008 financial crisis due to:
 
@@ -28,7 +28,7 @@ Traditional Value-at-Risk (VaR) models systematically failed during the 2008 fin
 
 This framework addresses these limitations by creating a unified early warning system.
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -114,7 +114,7 @@ tail-risk-detection/
 └── LICENSE                      # MIT License
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -126,29 +126,6 @@ Matplotlib, Seaborn
 yfinance (for data acquisition)
 ```
 
-### Installation
-
-1. **Clone the repository**
-```bash
-git clone https://github.com/yourusername/tail-risk-detection.git
-cd tail-risk-detection
-```
-
-2. **Create virtual environment**
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
-
-3. **Install dependencies**
-```bash
-pip install -r requirements.txt
-```
-
-4. **Install package in development mode**
-```bash
-pip install -e .
-```
 
 ### Quick Start
 
@@ -312,7 +289,7 @@ xgb_params = {
 
 **Walk-Forward Validation**: Quarterly retraining (every 60 days) using 250-day rolling window.
 
-## 📉 Visualizations
+## Visualizations
 
 ### 1. GARCH Conditional Volatility
 
@@ -358,7 +335,7 @@ plot_shap_importance(model, features, top_k=15)
 # GARCH conditional vol dominates at 21.8%
 ```
 
-## 🧪 Backtesting
+## Backtesting
 
 ### Kupiec Proportion of Failures Test
 
@@ -386,7 +363,7 @@ print(f"Independence rejected: {result['reject']}")
 # Crisis period: p < 0.01 → Violations are clustered
 ```
 
-## 🎓 Applications
+## Applications
 
 ### 1. Early Warning System
 **Use Case**: Risk committees monitoring regime shifts
@@ -416,7 +393,7 @@ print(f"Independence rejected: {result['reject']}")
 - Model identifies regime shifts → adjust implied volatility forecasts
 - Example: Option premium increases 10.5× during crisis peaks
 
-## ⚠️ Limitations & Caveats
+## Limitations & Caveats
 
 ### Critical Limitations
 
@@ -452,7 +429,7 @@ print(f"Independence rejected: {result['reject']}")
 - **Feature Engineering Bias**: 40+ features reflect researcher judgment
 - **Computational Cost**: GARCH/EVT estimation + XGBoost training requires ~5-10 minutes per quarterly retrain
 
-## 🔮 Future Work
+## Future Work
 
 ### Methodological Extensions
 
@@ -494,7 +471,7 @@ print(f"Independence rejected: {result['reject']}")
    - "What if model had been deployed in 2007?"
    - Quantify value of early warnings via hedging P&L simulation
 
-## 📚 References
+## References
 
 ### Core Papers
 
@@ -521,7 +498,7 @@ print(f"Independence rejected: {result['reject']}")
 ### Complete Bibliography
 See `references.bib` for full list of 30+ papers cited.
 
-## 🤝 Contributing
+## Contributing
 
 Contributions welcome! Areas of particular interest:
 
@@ -537,16 +514,12 @@ Contributions welcome! Areas of particular interest:
 4. Push to branch (`git push origin feature/new-feature`)
 5. Open Pull Request with detailed description
 
-## 📄 License
-
-This project is licensed under the MIT License - see [LICENSE](LICENSE) file for details.
 
 ## 👤 Author
 
 **Maksim Silchenko**  
 BSc International Business, Bayes Business School, City, University of London  
 📧 maksim.silchenko@bayes.city.ac.uk  
-🔗 [LinkedIn](https://www.linkedin.com/in/maksim-silchenko) | [GitHub](https://github.com/yourusername)
 
 **Research Interests**: Quantitative Finance, Machine Learning, Risk Management, Financial Engineering
 
