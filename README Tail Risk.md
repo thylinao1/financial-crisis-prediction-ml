@@ -523,31 +523,3 @@ BSc International Business, Bayes Business School, City, University of London
 
 **Research Interests**: Quantitative Finance, Machine Learning, Risk Management, Financial Engineering
 
-## 🙏 Acknowledgments
-
-- Bayes Business School faculty for guidance on quantitative finance methodologies
-- Open-source community for Python scientific computing stack
-- Yahoo Finance for accessible financial data API
-- Reviewers and contributors for feedback and improvements
-
-## 📊 Citation
-
-If you use this code or framework in your research, please cite:
-
-```bibtex
-@article{silchenko2024tailrisk,
-  title={Machine Learning Integrated Tail Risk Detection Using GARCH, Extreme Value Theory, and Gradient Boosting},
-  author={Silchenko, Maksim},
-  institution={Bayes Business School, City, University of London},
-  year={2024},
-  note={GitHub: https://github.com/yourusername/tail-risk-detection}
-}
-```
-
----
-
-**⭐ If you find this project useful, please consider starring the repository!**
-
-**📢 Questions or feedback?** Open an issue or reach out via email.
-
-**🔔 Stay Updated**: Watch the repository for new features and improvements.
